@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96e2d6"
+    tools:context="com.example.imtiazaminsajid.passingdata.MainActivity">
+
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Name"
+        android:textColorHint="#050404"
+        />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameET"
+        android:layout_alignStart="@+id/nameET"
+        android:layout_below="@+id/nameET"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Your Email"
+        android:textColorHint="#050404"/>
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailET"
+        android:layout_alignStart="@+id/emailET"
+        android:layout_below="@+id/emailET"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Your Cell Number"
+        android:textColorHint="#050404"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:text="Submit"
+        android:background="#bc7858"
+        android:textColor="#14169e"
+        android:onClick="submit"/>
+</RelativeLayout>
